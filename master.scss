@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono|Arvo');
+body {
+    margin: 0;
+    font-family: 'Nova Mono', monospace;
+    min-height: 100vh;
+    background-color: #bcd0d6;
+    color: black;
+}
+
+main {
+    min-height: 100vh;
+}
+
+.rowflx {
+    display: flex;
+    flex-flow: row;
+}
+
+.colflx {
+    display: flex;
+    flex-flow: column;
+}
+
+#lCContainer {
+    height: 100vh;
+    width: 352px;
+    display: flex;
+    flex-flow: column;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+#leftCard {
+    width: 256px;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #FFF;
+    margin-left: 64px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    text-align: center;
+    #pic {
+        width: 256px;
+        height: 256px;
+    }
+    #name {
+        font-size: 32px;
+        padding: 16px 0 0 0;
+        opacity: 0.87;
+    }
+    #bottom {
+        padding: 8px 0 24px 0;
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            opacity: 0.54;
+            color: black;
+            padding: 1px 0;
+        }
+    }
+}
+
+#feed {
+    padding: 64px;
+    margin-left: 352px;
+}
+
+.article {
+    padding: 32px;
+    padding-left: 0;
+    font-family: 'Arvo';
+    max-width: 512px;
+    .title {
+        font-size: 24px;
+        opacity: 0.87;
+    }
+    .content {
+        margin-top: 16px;
+        font-size: 16px;
+        opacity: 0.54;
+        text-align: justify;
+    }
+}
