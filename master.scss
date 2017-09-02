@@ -50,12 +50,18 @@ main {
     }
     #bottom {
         padding: 8px 0 24px 0;
+        align-items: center;
+        justify-content: center;
         a {
             text-decoration: none;
-            font-size: 16px;
+            font-size: 32px;
             opacity: 0.54;
             color: black;
-            padding: 1px 0;
+            padding: 0 8px;
+            transition: opacity cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+            &:hover {
+                opacity: 0.87;
+            }
         }
     }
 }
