@@ -1,89 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Nova+Mono|Arvo');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,800i');
 body {
     margin: 0;
-    font-family: 'Nova Mono', monospace;
+    font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
-    background-color: #bcd0d6;
-    color: black;
+    background-color: #32612d;
+    background-image: linear-gradient(19deg, #32612d 0%, #06d07e 100%);
 }
 
-main {
-    min-height: 100vh;
-}
-
-.rowflx {
+#line {
     display: flex;
     flex-flow: row;
-}
-
-.colflx {
-    display: flex;
-    flex-flow: column;
-}
-
-#lCContainer {
-    height: 100vh;
-    width: 352px;
-    display: flex;
-    flex-flow: column;
-    position: fixed;
-    align-items: center;
     justify-content: center;
+    width: 100vw;
+    margin-top: 5vh;
+    a {
+        padding: 1vw;
+    }
+    i {
+        font-size: 4vw;
+        color: #fff!important;
+    }
 }
 
-#leftCard {
-    width: 256px;
-    border-radius: 4px;
-    overflow: hidden;
-    background-color: #FFF;
-    margin-left: 64px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+#title {
+    font-weight: 800;
+    font-style: italic;
+    font-size: 6vw;
     text-align: center;
-    #pic {
-        width: 256px;
-        height: 256px;
-    }
-    #name {
-        font-size: 32px;
-        padding: 16px 0 0 0;
-        opacity: 0.87;
-    }
-    #bottom {
-        padding: 8px 0 24px 0;
-        align-items: center;
-        justify-content: center;
-        a {
-            text-decoration: none;
-            font-size: 32px;
-            opacity: 0.54;
-            color: black;
-            padding: 0 8px;
-            transition: opacity cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
-            &:hover {
-                opacity: 0.87;
-            }
-        }
-    }
-}
-
-#feed {
-    padding: 64px;
-    margin-left: 352px;
-}
-
-.article {
-    padding: 32px;
-    padding-left: 0;
-    font-family: 'Arvo';
-    max-width: 512px;
-    .title {
-        font-size: 24px;
-        opacity: 0.87;
-    }
-    .content {
-        margin-top: 16px;
-        font-size: 16px;
-        opacity: 0.54;
-        text-align: justify;
-    }
+    width: 100vw;
+    margin-top: 30vh;
+    color: #fff;
 }
