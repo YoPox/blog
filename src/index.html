@@ -4,22 +4,29 @@
     <title>yopox – games</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../master.min.css" rel="stylesheet">
-    <link href="../node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+
+    <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js" defer></script> 
+
+    <script type="module" src="src/game-card.js"></script>
+
+    <link href="src/master.css" rel="stylesheet">
+    <link href="node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 </head>
 
 <body id="cardContainer">
 
-    <header></header>
-
     <div class="nav">
-        <a href="..">yopox</a>
+        <a href=".">yopox</a>
     </div>
 
-    <div class="card">
+    <game-card></game-card>
+    <game-card></game-card>
+    <game-card></game-card>
+
+    <!-- <div class="card">
         <div class="name">uRUNium</div>
         <div class="year">2017</div>
-        <img src="../assets/urunium.png" alt="">
+        <img src="assets/urunium.png" alt="">
         <div class="desc">uRUNium is a fun platformer made with Phaser in 72 hours for the LD39 game jam.</div>
         <div class="icons">
             <a href="http://www.llgames.fr/LD39">
@@ -37,7 +44,7 @@
     <div class="card">
         <div class="name">Campagne</div>
         <div class="year">2018</div>
-        <img src="../assets/campagne.png" alt="">
+        <img src="assets/campagne.png" alt="">
         <div class="desc">Campagne is a city builder made for the GBJAM6 game jam.</div>
         <div class="icons">
             <a href="https://yopox.itch.io/campagne">
@@ -47,7 +54,7 @@
                 <i class="mdi mdi-github-circle"></i>
             </a>
         </div>
-    </div>
+    </div> -->
 
 </body>
 

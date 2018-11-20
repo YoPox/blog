@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/YoPox/blog#readme",
   "dependencies": {
+    "@polymer/lit-element": "^0.6.3",
+    "@webcomponents/webcomponentsjs": "^2.2.0",
     "mdi": "^2.0.46"
   }
 }
