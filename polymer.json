@@ -4,10 +4,11 @@
   "entrypoint": "src/index.html",
   "shell": "src/game-card.js",
   "extraDependencies": [
-    "node_modules/@webcomponents/webcomponentsjs/**"
+    "node_modules/@webcomponents/webcomponentsjs/**",
+    "assets/**"
   ],
   "builds": [{
-    "name": "mybuild",
+    "name": "build",
     "bundle": true,
     "js": {
       "minify": true
