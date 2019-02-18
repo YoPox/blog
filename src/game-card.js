@@ -82,11 +82,11 @@ class GameCard extends LitElement {
         <div class="buttons">
           ${(this.project=="")?
               html``:
-              html`<a href="${this.project}">PROJET</a>`
+              html`<a href="${this.project}">PROJECT</a>`
           }
           ${(this.play=="")?
               html``:
-              html`<a href="${this.play}">JOUER</a>`
+              html`<a href="${this.play}">PLAY</a>`
           }
           ${(this.github=="")?
               html``:
