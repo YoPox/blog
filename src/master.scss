@@ -5,16 +5,40 @@ body {
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-flow: column;
     align-items: center;
     background-image: linear-gradient(19deg, #32612d 0%, #06d07e 100%);
+    padding: 32px 0;
+}
+
+.art {
+    background-image: linear-gradient(19deg, #612d5e 0%, #d6b0ec 100%);
+}
+
+#bio {
+    color: #fff;
+    font-style: italic;
+    font-size: 20px;
+    max-width: 680px;
+    padding: 16px 32px;
+    box-sizing: border-box;
+    text-align: center;
+
+    a {
+        color: #fff;
+    }
 }
 
 #cardContainer {
+    width: 100vw;
+    display: flex;
     flex-flow: row;
     flex-wrap: wrap;
     align-content: flex-start;
-    padding: 0 32px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 64px;
 }
 
 .nav {
@@ -24,7 +48,7 @@ body {
     font-weight: 800;
     font-style: italic;
     z-index: 1;
-    padding: 32px 0 16px;
+    padding: 16px;
     a {
         text-decoration: none;
         color: #fff;

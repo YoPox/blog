@@ -11,7 +11,9 @@ class GameCard extends LitElement {
       about: String,
       github: String,
       project: String,
-      play: String
+      play: String,
+      ost: String,
+      small: Boolean
     };
   }
 
@@ -27,10 +29,13 @@ class GameCard extends LitElement {
     this.project = "";
     this.github = "";
     this.play = "";
+    this.ost = "";
+    this.small = false;
   }
 
   // Element template
   render() {
+    let isSmall = this.small ? " smallName" : "";
     return html`
       <style>
       .card {
@@ -46,6 +51,9 @@ class GameCard extends LitElement {
           font-weight: 800;
           font-style: italic;
         }
+      .smallName {
+        font-size: 24px;
+      }
       .year {
         padding: 0 0 16px 16px;
         font-size: 24px;
@@ -75,11 +83,15 @@ class GameCard extends LitElement {
       }
       </style>
       <div class="card">
-        <div class="name">${this.title}</div>
+        <div class="name${isSmall}">${this.title}</div>
         <div class="year">${this.date} • ${this.lang}</div>
         <img src="assets/${this.img}.png" alt="">
         <div class="desc">${this.about}</div>
         <div class="buttons">
+          ${(this.ost=="")?
+              html``:
+              html`<a href="${this.ost}">OST</a>`
+          }
           ${(this.project=="")?
               html``:
               html`<a href="${this.project}">PROJECT</a>`

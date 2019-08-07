@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js" defer></script> 
+    <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js" defer></script>
 
     <script type="module" src="src/game-card.js"></script>
 
@@ -13,37 +13,43 @@
     <link href="node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 </head>
 
-<body id="cardContainer">
+<body>
 
     <div class="nav">
         <a href=".">yopox</a>
     </div>
-    
-    <game-card  title="Sacriflag"
-                lang="JS"
-                img="sacriflag" 
-                about="Puzzle game made in 72h for the Ludum Dare 43 game jam."
-                project="https://ldjam.com/events/ludum-dare/43/sacriflag"
-                github="https://github.com/yopox/LD43"></game-card>
-    <game-card  title="Campagne"
-                lang="Kotlin" 
-                img="campagne" 
-                about="Campagne is a city builder made in a week for the GBJAM6."
-                project="https://yopox.itch.io/campagne"
-                github="https://github.com/yopox/GBJAM6"></game-card>
-    <game-card  title="Kurve"
-                lang="Python"
-                img="kurve"
-                about="First year engineering project. We created an arcade game with push buttons, a LED matrix and a Raspberry Pi."
-                github="https://github.com/yopox/projet1A"></game-card>
-    <game-card  title="uRUNium"
-                date="2017"
-                lang="JS"
-                img="urunium"
-                about="Platformer made in 72h for the Ludum Dare 39 game jam."
-                project="https://ldjam.com/events/ludum-dare/39/urunium"
-                github="https://github.com/yopox/LD39"></game-card>
 
+    <div id="bio">I am a French engineering student at CentraleSupélec, and I am looking for a 6-month internship in
+        April 2020.<br>Please <a href="mailto:louis.vignier@supelec.fr">send me a mail</a> !</div>
+
+    <div id="cardContainer">
+
+        <game-card title="Crystals" date="2019" lang="Kotlin" img="crystals" about="WIP roguelike for Android."
+            github="https://github.com/yopox/crystals"></game-card>
+        <game-card title="La Dimen- sionneuse" date="2019" lang="JS" img="dimensionneuse"
+        about="I worked on this project during an internship at WAO architecture. It's a measuring solution to help reusing materials."
+            github="https://github.com/yopox/crystals"></game-card>
+        <game-card title="Slave Odyssey" date="2019" lang="JS" img="odyssey"
+            about="Shoot 'em up game made in 72h for the Ludum Dare 44 game jam."
+            project="https://ldjam.com/events/ludum-dare/44/slave-odyssey" github="https://github.com/yopox/LD44">
+        </game-card>
+        <game-card title="La Voix des Abysses" date="2018-2019" lang="C#" img="scaphandrier"
+            about="Second year engineering project. A classmate and I made a visual novel, helped by four students from a local art school (ÉSAL)."
+            github="https://github.com/yopox/projet2A"></game-card>
+        <game-card title="Sacriflag" lang="JS" img="sacriflag"
+            about="Puzzle game made in 72h for the Ludum Dare 43 game jam."
+            project="https://ldjam.com/events/ludum-dare/43/sacriflag" github="https://github.com/yopox/LD43">
+        </game-card>
+        <game-card title="Campagne" lang="Kotlin" img="campagne"
+            about="Campagne is a city builder made in a week for the GBJAM6." project="https://yopox.itch.io/campagne"
+            github="https://github.com/yopox/GBJAM6"></game-card>
+        <game-card title="Kurve" lang="Python" img="kurve"
+            about="First year engineering project. A classmate and I created an arcade game with push buttons, a LED matrix and a Raspberry Pi."
+            github="https://github.com/yopox/projet1A"></game-card>
+        <game-card title="uRUNium" date="2017" lang="JS" img="urunium"
+            about="Platformer made in 72h for the Ludum Dare 39 game jam."
+            project="https://ldjam.com/events/ludum-dare/39/urunium" github="https://github.com/yopox/LD39"></game-card>
+    </div>
 </body>
 
 </html>
