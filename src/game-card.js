@@ -63,6 +63,7 @@ class GameCard extends LitElement {
       }
       img {
           width: 256px;
+          image-rendering: pixelated;
       }
       .desc {
           font-size: 16px;
